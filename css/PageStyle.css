@@ -1,0 +1,219 @@
+html {
+	background-size: 20px;
+	background-image: url("../img/background.PNG");
+	background-repeat: repeat;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+button:focus, input:focus {
+	outline: 0;
+}
+
+.todo-wrapper {
+	margin: auto;
+	width: 600px;
+	height: 200px;
+
+}
+
+.todo-wrapper__text {
+	margin-left: 2.5em;
+	font-family: Arial, sans-serif;
+	font-size: 5em;
+	font-stretch: ultra-expanded;
+	font-weight: bold;
+	text-shadow: -1px -1px rgba(238, 242, 252, 0.62), 0 1px 0 #B4ACAC;
+	color: #D1CCCC;
+}
+
+.todo-list {
+	background-color: #FAFBFB;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	font-size: x-large;
+	margin-top: 1em;
+}
+
+.background-list-element {
+	content: "";
+	width: 99%;
+	height: 1px;
+	background-color: #EBEBEB;
+	top: 2px;
+	position: relative;
+	display: block;
+	margin: auto;
+	border-bottom: solid 1px #B4B4B4;
+	border-left: solid 1px #B4B4B4;
+	border-right: solid 1px #B4B4B4;
+}
+
+.list-item:last-child {
+	border-bottom: none;
+}
+
+.todo-list__header {
+	width: 100%;
+	height: 20px;
+	background: #9a8e86; /* Old browsers */
+	background: -moz-linear-gradient(top, #9a8e86 0%, #92847a 22%, #92847a 28%, #92847a 45%, #92847a 45%, #82766c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #9a8e86 0%, #92847a 22%, #92847a 28%, #92847a 45%, #92847a 45%, #82766c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #9a8e86 0%, #92847a 22%, #92847a 28%, #92847a 45%, #92847a 45%, #82766c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9a8e86', endColorstr='#82766c', GradientType=0);
+}
+
+.item-status {
+	display: inline-block;
+	width: 2em;
+	border-right: solid 1px #EECFCF;
+}
+
+.item-description {
+	display: inline-block;
+	border-left: solid 1px #EECFCF;
+	margin-left: -3px;
+	height: 96%;
+	width: 80%;
+}
+
+.list-item {
+	border-bottom: dotted 1px #939399;
+	height: 2em;
+	line-height: 2em;
+}
+
+.list-item_done .item-status span {
+	color: #80A595;;
+}
+
+.list-item_done .item-description input {
+	text-decoration: line-through;
+	color: #BBBAB9;
+}
+
+.list-item_done .items-info__button-close {
+
+	display: block;
+}
+
+.items-info__button-close {
+	border-radius: 57%;
+	padding-bottom: 7%;
+	border-bottom: none;
+	border: none;
+	width: 7%;
+	height: 0;
+	background-color: #FAFBFB;
+	font-weight: 900;
+	font-size: 0.7em;
+	float: right;
+	margin-right: 0.5em;
+	line-height: 2.5em;
+	transform: rotate(45deg);
+	color: #918379;
+	font-size: 1em;
+	display: none;
+}
+
+.item-description__text {
+	margin-left: 1em;
+	border: none;
+	background: #FAFBFB;
+	font-size: 1em;
+}
+
+.item-status__status-icon {
+	margin-left: 0.6em;
+	color: #DCDCDC;
+}
+
+.item-status__header-icon {
+	transform: rotate(-90deg);
+	margin: auto;
+	margin-bottom: 1em;
+	position: relative;
+	top: -0.5em;
+}
+
+.item-status__status-icon_default {
+	color: #DCDCDC;
+}
+
+.item-status__status-icon_active {
+	color: #80A595;
+}
+
+.information-border {
+	content: "";
+	width: 97%;
+	height: 2em;
+	background-color: #F5F2F2;
+	top: 2px;
+	position: relative;
+	display: block;
+	margin: auto;
+	box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+	line-height: 2em;
+	color: #8B7E74;
+}
+
+.items-info {
+	float: left;
+	margin-left: 0.7em;
+}
+
+.items-info__items-left-count {
+	font-weight: 800;
+}
+
+.active-info {
+	margin-left: 8em;
+}
+.active-info button{
+	border: none;
+	background-color: #F5F2F2;
+}
+
+.active-info__selected {
+	font-weight: 800;
+}
+
+.clear-block {
+	float: right;
+	margin-right: 0.7em;
+}
+
+.clear-block__button-clear {
+	border-bottom: none;
+	border: none;
+	background-color: #D4D4D4;
+	font-size: 0.8em;
+	padding: 5px;
+	color: #8B7E74;
+}
+
+.item-header {
+	background-color: #ECECEC;
+	color: #BBBBBB;
+}
+
+.item-header .item-status__status-icon {
+	transform: rotate(-90deg);
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+.item-description__new-item {
+	border: none;
+	background: #ECECEC;
+	font-size: 1em;
+	height: 100%;
+	margin-left: 1em;
+}
+.item-modifying{
+	background-color: #8B7E74;
+}

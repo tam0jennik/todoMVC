@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/PageStyle.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div class="todo-wrapper">
+        <span class="todo-wrapper__text">todos</span>
+        <div class="todo-list">
+            <div class="todo-list__header"></div>
+            <div class="list-item item-header">
+                <div class="item-status">
+                    <div class="item-status__header-icon">&laquo;</div>
+                </div>
+                <div class="item-description"><input class="item-description__new-item" id="new-item__text"
+                                                     placeholder="What needs to be done?"> </input>
+                </div>
+            </div>
+        </div>
+        <div class="background-list-element"></div>
+        <div class="information-border">
+                <span class="items-info">
+                    <span class="items-info__items-left-count">0</span>
+                    <span class="items-info__items-text">items left</span>
+
+                </span>
+                <span class="active-info">
+                    <button class="active-info__button active-info__selected" id="all-tasks-bttn">All</button>
+                    <button class="active-info__button" id="active-tasks-bttn">Active</button>
+                    <button class="active-info__button" id="completed-tasks-bttn">Completed</button>
+                </span>
+                <span class="clear-block">
+                    <button class="clear-block__button-clear">Clear completed <span class="button-counter">(0)</span></button>
+                </span>
+        </div>
+    </div>
+</div>
+<script src="js/currentTaskOperation.js"></script>
+<script src="js/Viewer.js"></script>
+<script src="js/controller.js"></script>
+
+
+</body>
+</html>
